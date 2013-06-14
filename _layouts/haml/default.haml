@@ -5,6 +5,9 @@
     %link{:href => "css/reset.css", :rel => "stylesheet"}/
     %link{:href => "css/main.css", :rel => "stylesheet"}/
     %script{:src => "http://code.jquery.com/jquery-latest.min.js", :type => "text/javascript"}
+    %script{:src => "js/jquery.localscroll-min.js", :type => "text/javascript"}
+    %script{:src => "js/jquery.scrollTo-min.js", :type => "text/javascript"}
+    %script{:src => "js/jquery.nav.js", :type => "text/javascript"}
   %body
     %header
       .wrapper
@@ -12,15 +15,22 @@
           %h1 neemias
         #nav
           %ul.nav-list 
-            %li.home.active Home
-            %li.banda Banda
-            %li.contato Contato
-    #home.bgimg
+            %li.home.active
+              %a{:href => "#home"} 
+                Home
+            %li.banda
+              %a{:href => "#banda"}
+                banda
+            %li.contato
+              %a{:href => "#contato"}
+                Contato
+    #home.section.bgimg
     #banda.section
       .wrapper
-        %h1.title banda
+        %h1.title
+          .arrow
+          banda
         .holder
-    / #separator
-    #contato
+    #contato.section
 
     %script{:src => "js/main.js", :type => "text/javascript"}

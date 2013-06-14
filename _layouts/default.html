@@ -5,6 +5,9 @@
     <link href='css/reset.css' rel='stylesheet'>
     <link href='css/main.css' rel='stylesheet'>
     <script src='http://code.jquery.com/jquery-latest.min.js' type='text/javascript'></script>
+    <script src='js/jquery.localscroll-min.js' type='text/javascript'></script>
+    <script src='js/jquery.scrollTo-min.js' type='text/javascript'></script>
+    <script src='js/jquery.nav.js' type='text/javascript'></script>
   </head>
   <body>
     <header>
@@ -14,22 +17,36 @@
         </div>
         <div id='nav'>
           <ul class='nav-list'>
-            <li class='home active'>Home</li>
-            <li class='banda'>Banda</li>
-            <li class='contato'>Contato</li>
+            <li class='home active'>
+              <a href='#home'>
+                Home
+              </a>
+            </li>
+            <li class='banda'>
+              <a href='#banda'>
+                banda
+              </a>
+            </li>
+            <li class='contato'>
+              <a href='#contato'>
+                Contato
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </header>
-    <div class='bgimg' id='home'></div>
+    <div class='section bgimg' id='home'></div>
     <div class='section' id='banda'>
       <div class='wrapper'>
-        <h1 class='title'>banda</h1>
+        <h1 class='title'>
+          <div class='arrow'></div>
+          banda
+        </h1>
         <div class='holder'></div>
       </div>
     </div>
-    <!-- #separator -->
-    <div id='contato'></div>
+    <div class='section' id='contato'></div>
     <script src='js/main.js' type='text/javascript'></script>
   </body>
 </html>

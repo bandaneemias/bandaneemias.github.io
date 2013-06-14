@@ -1,11 +1,8 @@
 $ ->
+  # $("#nav").localScroll duration: 800
+  $("#nav").onePageNav scrollSpeed: 750, changeHash: false, currentClass: 'active'
 
-  $(window).resize (event) ->
-    minWidth = 1000
 
-    if $(window).width() < minWidth
-      ($ '.bgimg').css 'background-size', minWidth + 'px auto'
-      ($ '.bgimg').css 'background-position', 'left center'
-    else
-      ($ '.bgimg').css 'background-size', '100% auto'
-      ($ '.bgimg').css 'background-position', 'center center'
+  titleObj = ($ '.title')
+  titleWidth = titleObj.width()
+  titleObj.css 'margin', '0 ' + (((1000 - titleWidth)/2) + 10) + 'px ' + '0 ' + (((1000 - titleWidth)/2) - 10) + 'px'
