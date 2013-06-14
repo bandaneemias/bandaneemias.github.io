@@ -6,10 +6,10 @@ $(function() {
     minWidth = 1000;
     if ($(window).width() < minWidth) {
       ($('.bgimg')).css('background-size', minWidth + 'px auto');
-      return ($('.bgimg')).css('background-position', 'left -100px');
+      return ($('.bgimg')).css('background-position', 'left center');
     } else {
       ($('.bgimg')).css('background-size', '100% auto');
-      return ($('.bgimg')).css('background-position', 'center -100px');
+      return ($('.bgimg')).css('background-position', 'center center');
     }
   });
 });

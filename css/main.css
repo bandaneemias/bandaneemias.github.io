@@ -56,7 +56,7 @@ header {
   padding: 100px 0; }
 
 .bgimg {
-  background-position: center -100px;
+  background-position: center center;
   background-size: 100% auto; }
 
 #home {
