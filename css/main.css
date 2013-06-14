@@ -133,33 +133,59 @@ ul.posts span {
 /*****************************************************************************/
 
 /* standard */
+<<<<<<< HEAD
+.post pre {
+=======
 #post pre {
+>>>>>>> 83b9c3a910d168d0e4c692181f7c36f92e083aab
   border: 1px solid #ddd;
   background-color: #eef;
   padding: 0 .4em;
 }
 
+<<<<<<< HEAD
+.post ul, .post ol {
+  margin-left: 1.35em;
+}
+
+.post code {
+=======
 #post ul, #post ol {
   margin-left: 1.35em;
 }
 
 #post code {
+>>>>>>> 83b9c3a910d168d0e4c692181f7c36f92e083aab
   border: 1px solid #ddd;
   background-color: #eef;
   padding: 0 .2em;
 }
 
+<<<<<<< HEAD
+.post pre code {
+=======
 #post pre code {
+>>>>>>> 83b9c3a910d168d0e4c692181f7c36f92e083aab
   border: none;
 }
 
 /* terminal */
+<<<<<<< HEAD
+.post pre.terminal {
+=======
 #post pre.terminal {
+>>>>>>> 83b9c3a910d168d0e4c692181f7c36f92e083aab
   border: 1px solid #000;
   background-color: #333;
   color: #FFF;
 }
 
+<<<<<<< HEAD
+.post pre.terminal code {
+  background-color: #333;
+}
+=======
 #post pre.terminal code {
   background-color: #333;
 }
+>>>>>>> 83b9c3a910d168d0e4c692181f7c36f92e083aab
