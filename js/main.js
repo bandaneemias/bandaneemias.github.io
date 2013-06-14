@@ -6,12 +6,14 @@ $(function() {
     changeHash: true,
     currentClass: 'active'
   });
+  ($('.marker')).css('transition', 'none');
   markerPositioner();
+  ($('.marker')).css('transition', 'all .8s');
   return ($('.title')).each(function() {
     var titleWidth;
 
     titleWidth = ($(this)).width();
-    return ($(this)).css('margin', '0 ' + (((1000 - titleWidth) / 2) + 10) + 'px ' + '0 ' + (((1000 - titleWidth) / 2) - 10) + 'px');
+    return ($(this)).css('margin', '0 0 0 ' + (((1000 - titleWidth) / 2) - 10) + 'px');
   });
 });
 

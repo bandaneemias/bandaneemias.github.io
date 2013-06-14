@@ -77,7 +77,7 @@
 		
 		adjustNav: function(self, $parent) {
 			self.$elem.find('.' + self.config.currentClass).removeClass(self.config.currentClass);
-			$parent.addClass(self.config.currentClass).trigger('classChanged');
+			$parent.addClass(self.config.currentClass);
 
 			//Custom
 			markerPositioner();
