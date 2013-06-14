@@ -22,7 +22,6 @@ a:active {
   color: inherit; }
 
 body {
-  margin-top: 100px !important;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
   font-weight: 300; }
 
@@ -44,21 +43,33 @@ header {
     float: right;
     list-style: none; }
     header #nav .nav-list {
-      line-height: 76px;
       color: #638a84;
       text-transform: uppercase; }
+      header #nav .nav-list .marker {
+        position: absolute;
+        top: 0;
+        height: 12px;
+        background-color: #ef5142;
+        -webkit-transition: all .8s;
+        -moz-transition: all .8s;
+        transition: all .8s; }
       header #nav .nav-list li {
         float: left;
-        margin: 0 20px 12px 20px;
-        border-top: solid 12px white;
+        margin: 0 20px;
         cursor: pointer;
         -webkit-transition: all .5s;
         -moz-transition: all .5s;
-        transition: all .5s; }
-        header #nav .nav-list li:hover {
-          color: #ef5142; }
+        transition: all .5s;
+        position: relative;
+        overflow: hidden; }
+        header #nav .nav-list li a {
+          display: block;
+          height: 76px;
+          line-height: 76px;
+          padding: 12px 0; }
+          header #nav .nav-list li a:hover {
+            color: #ef5142; }
         header #nav .nav-list li.active {
-          border-top: solid 12px #ef5142;
           color: #ef5142; }
 
 .wrapper {
@@ -69,26 +80,22 @@ header {
   font-family: 'ozone';
   font-size: 35px;
   letter-spacing: 10px;
+  overflow: hidden;
+  text-align: center;
   display: inline-block;
   margin: 0 auto; }
-  .title .arrow {
-    width: 0;
-    height: 0;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-top: 9px solid white;
-    display: inline-block;
-    margin-bottom: 5px;
-    margin-right: -5px; }
+  .title span {
+    float: left; }
 
 .section .wrapper {
-  padding: 100px 0; }
+  padding: 120px 0; }
 
 .bgimg {
   background-position: center center;
   background-size: 100% auto; }
 
 #home {
+  padding-top: 100px;
   width: 100%;
   height: 700px;
   background-image: url("/img/home_bg.jpg");
@@ -104,6 +111,33 @@ header {
     border-top: solid 2px white;
     border-left: solid 2px white;
     border-right: solid 2px white; }
+  #banda .arrow {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 9px solid white;
+    margin-top: 15px;
+    margin-right: 15px;
+    float: left; }
+
+#contato {
+  height: 700px; }
+  #contato .title {
+    color: #ef5142; }
+  #contato .holder {
+    border-top: solid 2px #ef5142;
+    border-left: solid 2px #ef5142;
+    border-right: solid 2px #ef5142; }
+  #contato .arrow {
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 9px solid #ef5142;
+    margin-top: 15px;
+    margin-right: 15px;
+    float: left; }
 
 .holder {
   width: inherit;

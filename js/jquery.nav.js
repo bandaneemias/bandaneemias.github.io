@@ -77,7 +77,10 @@
 		
 		adjustNav: function(self, $parent) {
 			self.$elem.find('.' + self.config.currentClass).removeClass(self.config.currentClass);
-			$parent.addClass(self.config.currentClass);
+			$parent.addClass(self.config.currentClass).trigger('classChanged');
+
+			//Custom
+			markerPositioner();
 		},
 		
 		bindInterval: function() {
@@ -185,7 +188,7 @@
 		},
 		
 		scrollChange: function() {
-			var windowTop = this.$win.scrollTop();
+			var windowTop = this.$win.scrollTop() ;
 			var position = this.getSection(windowTop);
 			var $parent;
 			

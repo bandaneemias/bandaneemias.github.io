@@ -14,23 +14,26 @@
         #logo
           %h1 neemias
         #nav
-          %ul.nav-list 
-            %li.home.active
-              %a{:href => "#home"} 
-                Home
-            %li.banda
-              %a{:href => "#banda"}
-                banda
-            %li.contato
-              %a{:href => "#contato"}
-                Contato
-    #home.section.bgimg
-    #banda.section
+          %ul.nav-list
+            .marker 
+            %li.active
+              %a{:href => "#home"} Home
+            %li
+              %a{:href => "#banda"} banda
+            %li
+              %a{:href => "#contato"} Contato
+    %section#home.section.bgimg
+    %section#banda.section
       .wrapper
-        %h1.title
+        .title
           .arrow
-          banda
+          %span banda
         .holder
-    #contato.section
+    %section#contato.section
+      .wrapper
+        .title
+          .arrow
+          %span contato
+        .holder
 
     %script{:src => "js/main.js", :type => "text/javascript"}

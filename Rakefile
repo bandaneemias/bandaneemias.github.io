@@ -7,7 +7,7 @@ task :parse_haml do
   })
   pids = [
     # spawn("jekyll"), # put `auto: true` in your _config.yml
-    spawn("scss --watch css/sass:css"),
+    spawn("scss --watch css/sass/main.scss:css/main.css"),
     spawn("coffee -b -w -o js -c js/coffee/*.coffee")
   ]
   puts "done."
