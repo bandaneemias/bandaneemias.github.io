@@ -38,6 +38,7 @@ GEM
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.1.0)
     rake (10.0.4)
+    rb-fsevent (0.9.3)
     safe_yaml (0.7.1)
     sass (3.2.9)
     syntax (1.0.0)
@@ -54,4 +55,5 @@ DEPENDENCIES
   jekyll
   maruku
   rake
+  rb-fsevent (~> 0.9)
   sass
