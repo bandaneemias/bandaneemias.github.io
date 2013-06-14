@@ -5,6 +5,7 @@
     / %link{:href => "/css/syntax.css", :rel => "stylesheet"}/
     %link{:href => "css/reset.css", :rel => "stylesheet"}/
     %link{:href => "css/main.css", :rel => "stylesheet"}/
+    %script{:src => "http://code.jquery.com/jquery-latest.min.js", :type => "text/javascript"}
   %body
     %header
       .wrapper
@@ -15,10 +16,12 @@
             %li.home.active Home
             %li.banda Banda
             %li.contato Contato
-    #home
+    #home.bgimg
     #banda.section
       .wrapper
         %h1.title banda
         .holder
     / #separator
     #contato
+
+    %script{:src => "js/main.js", :type => "text/javascript"}
