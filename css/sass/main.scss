@@ -1,5 +1,6 @@
 
 @import "colours";
+@import "structure";
 
 @mixin holders($colour) {
   border-top: solid 2px $colour;
@@ -81,10 +82,14 @@ header {
     .nav-list {
       color: $dark-green;
       text-transform: uppercase;
+      letter-spacing: 1px;
+      position: relative;
 
       .marker {
         position: absolute;
         top: 0;
+        left: 20px;
+        width: 49px;
         height: 12px;
         background-color: $main;
         -webkit-transition: all .8s;
@@ -225,4 +230,10 @@ header {
   width: 100%;
   height: 50px;
   background-color: $light-green;
+}
+
+footer {
+  width: 100%;
+  height: 30px;
+  background-color: $main;
 }

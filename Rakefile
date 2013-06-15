@@ -8,13 +8,18 @@ task :parse_haml do
   pids = [
     # spawn("jekyll"), # put `auto: true` in your _config.yml
     spawn("scss --watch css/sass/main.scss:css/main.css"),
-    spawn("coffee -b -w -o js -c js/coffee/*.coffee")
+    spawn("coffee -b -w -o js -c js/coffee/*.coffee"),
   ]
   puts "done."
 end
 
 desc "Launch preview environment"
 task :default do
-  Rake::Task["parse_haml"].invoke
+  # Rake::Task["parse_haml"].invoke
+  pids = [
+    # spawn("jekyll"), # put `auto: true` in your _config.yml
+    spawn("scss --watch css/sass/main.scss:css/main.css"),
+    spawn("coffee -b -w -o js -c js/coffee/*.coffee"),
+  ]
   system "jekyll serve --watch"
 end

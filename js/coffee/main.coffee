@@ -2,9 +2,7 @@ $ ->
   # $("#nav").localScroll duration: 800
   ($ "#nav").onePageNav changeHash: true, currentClass: 'active'
 
-  ($ '.marker').css 'transition', 'none'
   markerPositioner()
-  ($ '.marker').css 'transition', 'all .8s'
 
   ($ '.title').each ->
     titleWidth = ($ @).width()
@@ -13,6 +11,6 @@ $ ->
 
 markerPositioner = ->
   markerWid = ($ '.active').width()
-  markerPos = ($ '.active').offset().left
+  markerPos = ($ '.active').position().left + 20
   ($ '.marker').css 'width', markerWid + 'px'
   ($ '.marker').css 'left', markerPos + 'px'
