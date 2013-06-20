@@ -2,17 +2,22 @@
 var markerPositioner;
 
 $(function() {
+  var rightHeight;
+
   ($("#nav")).onePageNav({
     changeHash: true,
     currentClass: 'active'
   });
   markerPositioner();
-  return ($('.title')).each(function() {
-    var titleWidth;
+  ($('.title,.subtitle')).each(function() {
+    var parWidth, titleWidth;
 
+    parWidth = ($(this)).parent().width();
     titleWidth = ($(this)).width();
-    return ($(this)).css('margin', '0 0 0 ' + (((1000 - titleWidth) / 2) - 10) + 'px');
+    return ($(this)).css('margin', '0 0 0 ' + (((parWidth - titleWidth) / 2) - 10) + 'px');
   });
+  rightHeight = ($('.right-wrapper')).height();
+  return ($('.left-wrapper')).css('height', rightHeight);
 });
 
 markerPositioner = function() {

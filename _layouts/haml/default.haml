@@ -1,6 +1,7 @@
 !!!
 %html
   %head
+    %meta{:charset => "utf-8"}/
     %title Banda Neemias
     %link{:href => "css/reset.css", :rel => "stylesheet"}/
     %link{:href => "css/main.css", :rel => "stylesheet"}/
@@ -29,10 +30,40 @@
           .arrow
           %span banda
         .holder
-        .row.pessoas
-          .column.four
-          .column.four
-          .column.four ahsidauhsiduhasidh
+        .row.sub-cat
+          .left-wrapper
+            .subtitle
+              .arrow
+              %span EP neemias
+            .holder
+            %img{:src => "img/capa_ep.jpg", :alt => "", :width => "400px"}/ 
+            %ol.tracks{:start => "1"}
+              %li O Caminho
+              %li Confiar
+              %li Canção Perfeita
+            .bonecos
+              %img{:src => "img/bonecos.png", :alt => ""}/ 
+          .right-wrapper
+            .subtitle
+              .arrow
+              %span pessoas
+            .holder
+            %ul.pessoas 
+              %li
+                .pessoas-head
+                  %h1 Tiago
+                  %img{:src => "", :alt => ""}/ 
+                %span.pessoa-bio Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              %li
+                .pessoas-head
+                  %h1 Bruno
+                  %img{:src => "", :alt => ""}/ 
+                %span.pessoa-bio Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              %li
+                .pessoas-head
+                  %h1 Rafael
+                  %img{:src => "", :alt => ""}/ 
+                %span.pessoa-bio Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     %section#contato.section
       .wrapper
         .title

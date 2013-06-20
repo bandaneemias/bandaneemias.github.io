@@ -106,16 +106,23 @@ header {
   width: 1000px;
   margin: 0 auto; }
 
-.title {
+.title, .subtitle {
   font-family: 'ozone';
-  font-size: 35px;
-  letter-spacing: 10px;
   overflow: hidden;
   text-align: center;
   display: inline-block;
   margin: 0 auto; }
-  .title span {
+  .title span, .subtitle span {
     float: left; }
+
+.title {
+  font-size: 35px;
+  letter-spacing: 10px; }
+
+.subtitle {
+  font-size: 25px;
+  letter-spacing: 6px;
+  line-height: 35px; }
 
 .section .wrapper {
   padding: 120px 0; }
@@ -133,14 +140,15 @@ header {
 
 #banda {
   width: 100%;
-  height: 700px;
-  background-color: #ef5142; }
+  background-color: #ef5142;
+  color: white; }
   #banda .title {
     color: white; }
   #banda .holder {
     border-top: solid 2px white;
     border-left: solid 2px white;
-    border-right: solid 2px white; }
+    border-right: solid 2px white;
+    margin-bottom: 100px; }
   #banda .arrow {
     width: 0;
     height: 0;
@@ -150,6 +158,61 @@ header {
     margin-top: 15px;
     margin-right: 15px;
     float: left; }
+  #banda .sub-cat .holder {
+    margin-bottom: 30px !important; }
+  #banda .left-wrapper {
+    width: 400px;
+    margin-right: 100px;
+    float: left;
+    position: relative; }
+    #banda .left-wrapper .tracks {
+      margin: 20px 0 0 30px;
+      list-style: decimal !important;
+      line-height: 30px; }
+    #banda .left-wrapper .bonecos {
+      width: 320px;
+      height: 355px;
+      margin: 0 auto 50px auto;
+      position: absolute;
+      bottom: 0; }
+  #banda .right-wrapper {
+    width: 500px;
+    float: left; }
+    #banda .right-wrapper .pessoas {
+      list-style: none;
+      overflow: hidden; }
+      #banda .right-wrapper .pessoas li {
+        overflow: hidden;
+        margin-bottom: 40px; }
+        #banda .right-wrapper .pessoas li:nth-child(odd) .pessoas-head h1 {
+          float: left; }
+        #banda .right-wrapper .pessoas li:nth-child(odd) .pessoas-head img {
+          float: right; }
+        #banda .right-wrapper .pessoas li:nth-child(even) .pessoas-head h1 {
+          float: right; }
+        #banda .right-wrapper .pessoas li:nth-child(even) .pessoas-head img {
+          float: left; }
+        #banda .right-wrapper .pessoas li .pessoas-head {
+          border-bottom: solid 2px white;
+          overflow: hidden; }
+          #banda .right-wrapper .pessoas li .pessoas-head h1 {
+            font-family: 'ozone';
+            letter-spacing: 5px;
+            font-size: 30px;
+            margin-top: 165px;
+            margin-bottom: 5px; }
+          #banda .right-wrapper .pessoas li .pessoas-head img {
+            width: 300px;
+            height: 200px;
+            display: block;
+            background-color: black;
+            margin: 0 !important;
+            border-style: none !important; }
+        #banda .right-wrapper .pessoas li .pessoa-bio {
+          font-size: 16px;
+          line-height: 30px;
+          margin-top: 20px;
+          float: left; }
 
 #contato {
   height: 700px; }
@@ -170,9 +233,15 @@ header {
     float: left; }
 
 .holder {
-  width: inherit;
+  width: 100%;
   height: 15px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */ }
 
 #separator {
   background-size: 100%;

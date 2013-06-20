@@ -4,10 +4,13 @@ $ ->
 
   markerPositioner()
 
-  ($ '.title').each ->
+  ($ '.title,.subtitle').each ->
+    parWidth = ($ @).parent().width()
     titleWidth = ($ @).width()
-    ($ @).css 'margin', '0 0 0 ' + (((1000 - titleWidth)/2) - 10) + 'px'
+    ($ @).css 'margin', '0 0 0 ' + (((parWidth - titleWidth)/2) - 10) + 'px'
 
+  rightHeight = ($ '.right-wrapper').height()
+  ($ '.left-wrapper').css 'height', rightHeight
 
 markerPositioner = ->
   markerWid = ($ '.active').width()

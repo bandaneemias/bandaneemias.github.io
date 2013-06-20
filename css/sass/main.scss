@@ -21,6 +21,12 @@
   float: left;
 }
 
+@mixin border-box() {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
 @font-face {
     font-family: 'ozone';
     src: url('/fonts/ozone.eot');
@@ -150,10 +156,8 @@ header {
   margin: 0 auto;
 }
 
-.title {
+.title, .subtitle {
   font-family: 'ozone';
-  font-size: 35px;
-  letter-spacing: 10px;
   overflow: hidden;
   text-align: center;
   display: inline-block;
@@ -162,6 +166,17 @@ header {
   span {
     float: left;
   }
+}
+
+.title {
+  font-size: 35px;
+  letter-spacing: 10px;
+}
+
+.subtitle {
+  font-size: 25px;
+  letter-spacing: 6px;
+  line-height: 35px;
 }
 
 .section {
@@ -186,8 +201,8 @@ header {
 
 #banda {
   width: 100%;
-  height: 700px;
   background-color: $main;
+  color: white;
   // border-top: solid 5px white;
 
   .title {
@@ -196,10 +211,106 @@ header {
   
   .holder {
     @include holders(white);
+    margin-bottom: 100px;
   }
 
   .arrow {
     @include arrow(white);
+  }
+  
+  .sub-cat {
+    .holder {
+      margin-bottom: 30px !important;
+    }
+  }
+
+  .left-wrapper {
+    width: 400px;
+    margin-right: 100px;
+    float: left;
+    position: relative;
+
+    .tracks {
+      margin: 20px 0 0 30px;
+      list-style: decimal !important;
+      line-height: 30px;
+    }
+
+    .bonecos {
+      width: 320px;
+      height: 355px;
+      margin: 0 auto 50px auto;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  .right-wrapper {
+    width: 500px;
+    float: left;
+
+    .pessoas {
+      list-style: none;
+      overflow: hidden;
+
+      li {
+
+        overflow: hidden;
+
+        &:nth-child(odd) {
+          .pessoas-head {
+            h1 {
+              float: left;
+            }
+            img {
+              float: right;
+            }
+          }
+        }
+        &:nth-child(even) {
+          .pessoas-head {
+            h1 {
+              float: right;
+            }
+            img {
+              float: left;
+            }
+          }
+        }
+
+        margin-bottom: 40px;
+
+        .pessoas-head {
+
+          border-bottom: solid 2px white;
+          overflow: hidden;
+
+          h1 {
+            font-family: 'ozone';
+            letter-spacing: 5px;
+            font-size: 30px;
+            margin-top: 165px;
+            margin-bottom: 5px;
+          }
+
+          img {
+            width: 300px;
+            height: 200px;
+            display: block;
+            background-color: black;
+            margin: 0 !important;
+            border-style: none !important;
+          }
+        }
+
+        .pessoa-bio {
+          font-size: 16px;
+          line-height: 30px;
+          margin-top: 20px;
+          float: left;
+        }
+      }
+    }
   }
 }
 
@@ -220,9 +331,12 @@ header {
 }
 
 .holder {
-  width: inherit;
+  width: 100%;
   height: 15px;
   margin-top: 10px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
 #separator {

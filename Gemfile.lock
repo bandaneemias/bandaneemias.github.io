@@ -44,7 +44,6 @@ GEM
     sass (3.2.9)
     syntax (1.0.0)
     tilt (1.4.1)
-    watchr (0.7)
     yajl-ruby (1.1.0)
 
 PLATFORMS
@@ -60,4 +59,3 @@ DEPENDENCIES
   rake
   rb-fsevent (~> 0.9)
   sass
-  watchr
