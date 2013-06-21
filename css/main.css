@@ -64,7 +64,7 @@ header {
     line-height: 100px;
     font-size: 45px;
     letter-spacing: 40px;
-    color: #ef5142; }
+    color: #f05242; }
   header #nav {
     float: right;
     list-style: none; }
@@ -79,7 +79,7 @@ header {
         left: 20px;
         width: 49px;
         height: 12px;
-        background-color: #ef5142;
+        background-color: #f05242;
         -webkit-transition: all .8s;
         -moz-transition: all .8s;
         transition: all .8s; }
@@ -98,9 +98,9 @@ header {
           line-height: 76px;
           padding: 12px 0; }
           header #nav .nav-list li a:hover {
-            color: #ef5142; }
+            color: #f05242; }
         header #nav .nav-list li.active {
-          color: #ef5142; }
+          color: #f05242; }
 
 .wrapper {
   width: 1000px;
@@ -140,7 +140,7 @@ header {
 
 #banda {
   width: 100%;
-  background-color: #ef5142;
+  background-color: #f05242;
   color: white; }
   #banda .title {
     color: white; }
@@ -159,7 +159,7 @@ header {
     margin-right: 15px;
     float: left; }
   #banda .sub-cat .holder {
-    margin-bottom: 30px !important; }
+    margin-bottom: 60px !important; }
   #banda .left-wrapper {
     width: 400px;
     margin-right: 100px;
@@ -169,12 +169,15 @@ header {
       margin: 20px 0 0 30px;
       list-style: decimal !important;
       line-height: 30px; }
-    #banda .left-wrapper .bonecos {
-      width: 320px;
-      height: 355px;
-      margin: 0 auto 50px auto;
-      position: absolute;
-      bottom: 0; }
+    #banda .left-wrapper .agradecimento {
+      margin-top: 130px !important; }
+    #banda .left-wrapper .agrad-texto {
+      line-height: 40px;
+      letter-spacing: 1px; }
+  #banda .bonecos {
+    width: 320px;
+    height: 355px;
+    margin: 150px auto 50px auto; }
   #banda .right-wrapper {
     width: 500px;
     float: left; }
@@ -182,52 +185,22 @@ header {
       list-style: none;
       overflow: hidden; }
       #banda .right-wrapper .pessoas li {
-        overflow: hidden;
-        margin-bottom: 40px; }
-        #banda .right-wrapper .pessoas li:nth-child(odd) .pessoas-head h1 {
-          float: left; }
-        #banda .right-wrapper .pessoas li:nth-child(odd) .pessoas-head img {
-          float: right; }
-        #banda .right-wrapper .pessoas li:nth-child(even) .pessoas-head h1 {
-          float: right; }
-        #banda .right-wrapper .pessoas li:nth-child(even) .pessoas-head img {
-          float: left; }
-        #banda .right-wrapper .pessoas li .pessoas-head {
-          border-bottom: solid 2px white;
-          overflow: hidden; }
-          #banda .right-wrapper .pessoas li .pessoas-head h1 {
-            font-family: 'ozone';
-            letter-spacing: 5px;
-            font-size: 30px;
-            margin-top: 165px;
-            margin-bottom: 5px; }
-          #banda .right-wrapper .pessoas li .pessoas-head img {
-            width: 300px;
-            height: 200px;
-            display: block;
-            background-color: black;
-            margin: 0 !important;
-            border-style: none !important; }
-        #banda .right-wrapper .pessoas li .pessoa-bio {
-          font-size: 16px;
-          line-height: 30px;
-          margin-top: 20px;
-          float: left; }
+        margin-bottom: 30px; }
 
 #contato {
   height: 700px; }
   #contato .title {
-    color: #ef5142; }
+    color: #f05242; }
   #contato .holder {
-    border-top: solid 2px #ef5142;
-    border-left: solid 2px #ef5142;
-    border-right: solid 2px #ef5142; }
+    border-top: solid 2px #f05242;
+    border-left: solid 2px #f05242;
+    border-right: solid 2px #f05242; }
   #contato .arrow {
     width: 0;
     height: 0;
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
-    border-top: 9px solid #ef5142;
+    border-top: 9px solid #f05242;
     margin-top: 15px;
     margin-right: 15px;
     float: left; }
@@ -252,4 +225,4 @@ header {
 footer {
   width: 100%;
   height: 30px;
-  background-color: #ef5142; }
+  background-color: #f05242; }

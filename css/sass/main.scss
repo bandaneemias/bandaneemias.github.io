@@ -220,7 +220,7 @@ header {
   
   .sub-cat {
     .holder {
-      margin-bottom: 30px !important;
+      margin-bottom: 60px !important;
     }
   }
 
@@ -236,13 +236,20 @@ header {
       line-height: 30px;
     }
 
-    .bonecos {
-      width: 320px;
-      height: 355px;
-      margin: 0 auto 50px auto;
-      position: absolute;
-      bottom: 0;
+    .agradecimento {
+      margin-top: 130px !important;
     }
+
+    .agrad-texto {
+      line-height: 40px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .bonecos {
+    width: 320px;
+    height: 355px;
+    margin: 150px auto 50px auto;
   }
 
   .right-wrapper {
@@ -254,61 +261,7 @@ header {
       overflow: hidden;
 
       li {
-
-        overflow: hidden;
-
-        &:nth-child(odd) {
-          .pessoas-head {
-            h1 {
-              float: left;
-            }
-            img {
-              float: right;
-            }
-          }
-        }
-        &:nth-child(even) {
-          .pessoas-head {
-            h1 {
-              float: right;
-            }
-            img {
-              float: left;
-            }
-          }
-        }
-
-        margin-bottom: 40px;
-
-        .pessoas-head {
-
-          border-bottom: solid 2px white;
-          overflow: hidden;
-
-          h1 {
-            font-family: 'ozone';
-            letter-spacing: 5px;
-            font-size: 30px;
-            margin-top: 165px;
-            margin-bottom: 5px;
-          }
-
-          img {
-            width: 300px;
-            height: 200px;
-            display: block;
-            background-color: black;
-            margin: 0 !important;
-            border-style: none !important;
-          }
-        }
-
-        .pessoa-bio {
-          font-size: 16px;
-          line-height: 30px;
-          margin-top: 20px;
-          float: left;
-        }
+        margin-bottom: 30px;
       }
     }
   }
