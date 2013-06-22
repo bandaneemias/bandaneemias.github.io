@@ -172,8 +172,10 @@ header {
     #banda .left-wrapper .agradecimento {
       margin-top: 130px !important; }
     #banda .left-wrapper .agrad-texto {
-      line-height: 25px;
-      letter-spacing: 1px; }
+      line-height: 35px;
+      letter-spacing: 1px;
+      text-align: justify;
+      text-justify: inter-word; }
   #banda .bonecos {
     width: 320px;
     height: 355px;

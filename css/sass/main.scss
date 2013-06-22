@@ -241,8 +241,10 @@ header {
     }
 
     .agrad-texto {
-      line-height: 25px;
+      line-height: 35px;
       letter-spacing: 1px;
+      text-align:justify;
+      text-justify:inter-word;
     }
   }
 
