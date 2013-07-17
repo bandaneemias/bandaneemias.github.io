@@ -9,8 +9,8 @@
 }
 
 @mixin arrow($colour) {
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
   border-top: 9px solid $colour;
@@ -208,7 +208,7 @@ header {
   .title {
     color: white;
   }
-  
+
   .holder {
     @include holders(white);
     margin-bottom: 100px;
@@ -217,7 +217,7 @@ header {
   .arrow {
     @include arrow(white);
   }
-  
+
   .sub-cat {
     .holder {
       margin-bottom: 60px !important;
@@ -248,12 +248,6 @@ header {
     }
   }
 
-  .bonecos {
-    width: 320px;
-    height: 355px;
-    margin: 150px auto 50px auto;
-  }
-
   .right-wrapper {
     width: 500px;
     float: left;
@@ -271,6 +265,7 @@ header {
 
 #contato {
   height: 700px;
+  overflow: hidden;
 
   .title {
     color: $main;
@@ -278,10 +273,29 @@ header {
 
   .holder {
     @include holders($main);
+    margin-bottom: 100px;
   }
 
   .arrow {
     @include arrow($main);
+  }
+
+  .contato {
+    color: #222;
+    font-size: 20px;
+    width: 50%;
+    float: left;
+    margin-top: 80px;
+
+    li {
+      margin-bottom: 20px;
+
+      i {
+        display: inline-block;
+        margin-right: 15px !important;
+        width: 20px;
+      }
+    }
   }
 }
 
@@ -305,4 +319,17 @@ footer {
   width: 100%;
   height: 30px;
   background-color: $main;
+}
+
+
+.holder-bonecos {
+  float: right;
+  width: 40%;
+}
+.bonecos {
+  // float: right;
+  width: 320px;
+  height: 355px;
+  margin: 0 auto;
+  // margin: 150px auto 50px auto;
 }

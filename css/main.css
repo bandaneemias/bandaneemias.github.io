@@ -176,10 +176,6 @@ header {
       letter-spacing: 1px;
       text-align: justify;
       text-justify: inter-word; }
-  #banda .bonecos {
-    width: 320px;
-    height: 355px;
-    margin: 150px auto 50px auto; }
   #banda .right-wrapper {
     width: 500px;
     float: left; }
@@ -190,13 +186,15 @@ header {
         margin-bottom: 30px; }
 
 #contato {
-  height: 700px; }
+  height: 700px;
+  overflow: hidden; }
   #contato .title {
     color: #f05242; }
   #contato .holder {
     border-top: solid 2px #f05242;
     border-left: solid 2px #f05242;
-    border-right: solid 2px #f05242; }
+    border-right: solid 2px #f05242;
+    margin-bottom: 100px; }
   #contato .arrow {
     width: 0;
     height: 0;
@@ -206,6 +204,18 @@ header {
     margin-top: 15px;
     margin-right: 15px;
     float: left; }
+  #contato .contato {
+    color: #222;
+    font-size: 20px;
+    width: 50%;
+    float: left;
+    margin-top: 80px; }
+    #contato .contato li {
+      margin-bottom: 20px; }
+      #contato .contato li i {
+        display: inline-block;
+        margin-right: 15px !important;
+        width: 20px; }
 
 .holder {
   width: 100%;
@@ -228,3 +238,12 @@ footer {
   width: 100%;
   height: 30px;
   background-color: #f05242; }
+
+.holder-bonecos {
+  float: right;
+  width: 40%; }
+
+.bonecos {
+  width: 320px;
+  height: 355px;
+  margin: 0 auto; }
