@@ -166,9 +166,7 @@ header {
     float: left;
     position: relative; }
     #banda .left-wrapper .tracks {
-      margin: 20px 0 0 30px;
-      list-style: decimal !important;
-      line-height: 30px; }
+      margin: 30px 0 0 0; }
     #banda .left-wrapper .agradecimento {
       margin-top: 130px !important; }
     #banda .left-wrapper .agrad-texto {

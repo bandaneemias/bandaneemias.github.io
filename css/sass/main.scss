@@ -231,9 +231,11 @@ header {
     position: relative;
 
     .tracks {
-      margin: 20px 0 0 30px;
-      list-style: decimal !important;
-      line-height: 30px;
+      margin: 30px 0 0 0;
+      // list-style: decimal !important;
+      // line-height: 30px;
+
+
     }
 
     .agradecimento {
