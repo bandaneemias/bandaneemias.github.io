@@ -1,2 +1,9 @@
-name: Banda Neemias
-pygments: true
+# Site settings
+title: Banda Neemias
+email: ""
+description: ""
+baseurl: ""
+url: "http://bandaneemias.com.br" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown

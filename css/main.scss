@@ -1,6 +1,50 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
 
-@import "colours";
-@import "structure";
+$main: #F05242;
+$light-green: #42aaa5;
+$dark-green: #638a84;
+
+.row {
+
+  // width: 1000px;
+  overflow: hidden;
+  display: block;
+
+  .column {
+
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+
+    float: left;
+    padding: 5px;
+
+    height: 100px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &.twelve {
+      width: 100%;
+    }
+    &.six {
+      width: 50%;
+    }
+    &.four {
+      width: 33.3333333333%;
+    }
+    &.three {
+      width: 25%;
+    }
+  }
+}
 
 @mixin holders($colour) {
   border-top: solid 2px $colour;
